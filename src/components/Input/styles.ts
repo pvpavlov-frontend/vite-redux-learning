@@ -13,7 +13,8 @@ export const InputContainer = styled.div`
 
 export const InputLabel = styled.label`
   font-size: 16px;
-  color: black;
+  color: white;
+  font-weight: bold;
 `;
 
 export const InputComponent = styled.input<InputComponentProps>`

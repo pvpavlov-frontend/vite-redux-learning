@@ -5,17 +5,17 @@ interface ButtonComponetProps {
 }
 
 export const ButtonComponent = styled.button<ButtonComponetProps>`
-  width: 100%;
-  min-height: 50px;
-  height: fit-content;
-  margin: 0;
-  padding: 4px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  /* background-color: ${(props) => (props.disabled ? "grey" : "blue")}; */
-  background-color: ${({ disabled }) => (disabled ? "grey" : "blue")};
-  color: ${({ $isRedFont }) => ($isRedFont ? "red" : "white")};
-  font-size: 14px;
-  font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50px;
+    background: ${({ disabled }) => (disabled ? "grey" : "linear-gradient(0deg, #3678B4 0%, #3678B4 100%), linear-gradient(270deg, #362A84 0.23%, #5936B4 94.2%), #4A319F")};
+    color: ${({ $isRedFont }) => ($isRedFont ? "red" : "white")};
+    padding: 13px 40px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: deepskyblue;
+    }
 `;

@@ -1,11 +1,13 @@
+import { BrowserRouter } from "react-router-dom";
+import Weather from "./pages/Weather";
 import GlobalStyles from "./styles/GlobalStyles";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <GlobalStyles />
-      Redux project
-    </div>
+      <Weather />
+    </BrowserRouter>
   )
 }
 

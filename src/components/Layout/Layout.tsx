@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 
-import {LikeIcon} from 'assets';
+// import {LikeIcon} from 'assets';
 
 import {
   LayoutWrapper,
@@ -25,7 +25,7 @@ function Layout({ children }: LayoutProps) {
     <LayoutWrapper>
       <Header>
         <LogoContainer onClick={() => navigate("/")}>
-          <LogoImg src={LikeIcon} />
+          {/* <LogoImg src={LikeIcon} /> */}
           {/* Logo */}
           </LogoContainer>
         <NavContainer>

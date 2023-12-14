@@ -5,15 +5,20 @@ import { colors } from "styles/colors"
 export const CounterWrapper = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 15px;
-  width: 300px;
+  max-width: 50%;
   height: fit-content;
-  padding: 40px;
+  padding: 20px;
   background-color: ${colors.primary};
+  .button-component{
+    max-width: fit-content;
+    min-width: 50px;
+  }
 `
 
 export const Count = styled.p`
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   color: ${colors.white};
 `

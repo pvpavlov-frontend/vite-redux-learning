@@ -1,11 +1,13 @@
-import GlobalStyles from "./styles/GlobalStyles";
+import GlobalStyles from "styles/GlobalStyles"
+
+// import Homework29 from "homeworks/Homework29"
 
 function App() {
   return (
-    <div>
+    <>
       <GlobalStyles />
-      Redux project
-    </div>
+      {/* <Homework29 /> */}
+    </>
   )
 }
 

@@ -12,3 +12,17 @@ export type AppThunk<ReturnType = void> = ThunkAction<
   unknown,
   Action<string>
 >
+
+// Дааные в Redux store лежат примерно таким образом
+
+// const globalStore = {
+//   auth: {
+//     token: "ASDAFASDASD123124124124ADCADF",
+//     privateRules: false,
+//   },
+//   weather: {
+//     city: "Berlin",
+//     temp: "1423142",
+//     feelsLikeTemp: "123",
+//   },
+// }

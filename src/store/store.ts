@@ -1,10 +1,10 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit"
 
-import {counterReducer} from './redux/counter/counterSlice';
+import { counterReducer } from "./redux/counter/counterSlice"
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer
+    counter: counterReducer,
   },
 })
 
@@ -20,6 +20,9 @@ export type AppThunk<ReturnType = void> = ThunkAction<
 // Дааные в Redux store лежат примерно таким образом
 
 // const globalStore = {
+//  counter: {
+//    count:0
+//   },
 //   auth: {
 //     token: "ASDAFASDASD123124124124ADCADF",
 //     privateRules: false,

@@ -9,19 +9,19 @@ const initialState: CounterState = {
 };
 
 const counterSlice = createSlice({
-    name: 'counter',
+    name: 'COUNTER',
     initialState,
     reducers: {
-        increment: (state, action: PayloadAction<number>) => {
+        increment: (state: CounterState, action: PayloadAction<number>) => {
             state.value += action.payload;
         },
-        decrement: (state, action: PayloadAction<number>) => {
+        decrement: (state: CounterState, action: PayloadAction<number>) => {
             state.value -= action.payload;
         },
-        multiply: (state, action: PayloadAction<number>) => {
+        multiply: (state: CounterState, action: PayloadAction<number>) => {
             state.value *= action.payload;
         },
-        divide: (state, action: PayloadAction<number>) => {
+        divide: (state: CounterState, action: PayloadAction<number>) => {
             state.value /= action.payload;
         },
     },

@@ -1,2 +1,5 @@
-export { default as WeatherImage } from "./weather.png";
-export { default as Temp } from "./temp.png";
+export { default as WeatherImage } from "./weather.png"
+export { default as Temp } from "./temp.png"
+export { default as Likeimg } from "./like.png"
+export { default as DislikeImg } from "./dislike.png"
+export { default as UserImg } from "./users.jpg"

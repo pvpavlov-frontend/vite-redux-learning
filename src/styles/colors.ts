@@ -7,7 +7,7 @@ interface Colors {
 
 export const colors: Colors = {
   primary: "rgb(26, 35, 53)",
-  formTitle: "rgb(123, 54, 247)",
+  formTitle: "rgb(0, 0, 255)",
   white: "#ffffff",
   black: " #000000",
 };

@@ -15,12 +15,13 @@ export const UsersPageFlex = styled.div`
     box-sizing: border-box;
 `
 export const UsersPageCard = styled.div`
-    width: calc(25% - 10px); 
+    width: calc(25% - 30px); 
     padding: 15px;
     margin: 15px;
     border: 1px solid gray;
     border-radius: 10px;
-    flex: 0 0 230px;
+    flex-basis: 275px;
+    min-height: 300px;
     background: cornflowerblue;
 `
 export const UsersPageH2 = styled.h2`
@@ -33,6 +34,7 @@ export const UsersPageP = styled.p`
     margin-bottom: 10px;
     color: white;
     font-weight: 700;
+    word-wrap: break-word;
     span {
         color: #010101;
         font-weight: 400;

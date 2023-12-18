@@ -6,9 +6,11 @@ import Button from "components/Button"
 import { usersActions } from "store/redux/users/usersSlice"
 
 import { HomePageWrapper, UserForm, UserFormName } from "./styles"
+import { number } from "prop-types"
 
 function Home() {
   const dispatch = useDispatch()
+
 
   const formik = useFormik({
     initialValues: {

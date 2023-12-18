@@ -5,12 +5,13 @@ import { UsersPageCard, UsersPageContainer, UsersPageFlex, UsersPageH2, UsersPag
 function UsersPage() {
   const users = useSelector(selectAllUsers);
 
+
   return (
     <UsersPageContainer>
       <UsersPageH2>Users Page</UsersPageH2>
       <UsersPageFlex>
-        {users.map((user, index) => (
-          <UsersPageCard key={index}>
+        {users.map((user) => (
+          <UsersPageCard key={crypto.randomUUID()}>
             <UsersPageP>
               <span>JobTitle:</span> {user.jobTitle}
             </UsersPageP>

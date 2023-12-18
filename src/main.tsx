@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom/client"
 import { Provider } from "react-redux"
+import { BrowserRouter } from "react-router-dom"
 import { store } from "./store/store"
 import App from "./App"
 
@@ -10,6 +11,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   // следовательно все компоненты имет возможность запршивать изменения в сторе(диспатчить action)
   // и имеет доступ к изменениям которые произошли
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>,
 )

@@ -1,8 +1,8 @@
 interface Colors {
-  primary: string;
-  formTitle: string;
-  white: string;
-  black: string;
+  primary: string
+  formTitle: string
+  white: string
+  black: string
 }
 
 export const colors: Colors = {
@@ -10,4 +10,4 @@ export const colors: Colors = {
   formTitle: "rgb(123, 54, 247)",
   white: "#ffffff",
   black: " #000000",
-};
+}

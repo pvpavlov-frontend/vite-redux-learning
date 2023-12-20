@@ -3,11 +3,12 @@ import { useDispatch, useSelector } from "react-redux"
 import { jokeGeneratorSeletor } from "store/redux/jokeGenerator/selectors"
 import { getJoke } from "store/redux/jokeGenerator/jokeGeneratorSlice"
 import Button from "components/Button"
+import {AppDispatch } from 'store/store'
 
 import { JokeGeneratorWrapper, JokeContainer, Paragraph } from "./styles"
 
 function JokeGenerator() {
-  const dispatch = useDispatch()
+  const dispatch: AppDispatch = useDispatch()
   const { data, error, isLoading } = useSelector(jokeGeneratorSeletor)
 
   console.log(data)
@@ -21,7 +22,7 @@ function JokeGenerator() {
           name="Get Joke"
           onClick={() => {
             // тут будем диспатчить экшн
-            dispatch(getJoke() as any)
+            dispatch(getJoke())
           }}
         />
         {isLoading && <Paragraph>LOADING...</Paragraph>}

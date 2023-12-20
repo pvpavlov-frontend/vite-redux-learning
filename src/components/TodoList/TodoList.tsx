@@ -23,7 +23,7 @@ function TodoList() {
         setInputText('');
     };
 
-    const handleRemoveTodo = (id: number) => {
+    const handleRemoveTodo = (id: string) => {
         dispatch(removeTodo(id));
     };
 

@@ -1,6 +1,10 @@
-// import { Route, Routes } from "react-router-dom"
-import JokeGenerator from "components/JokeGenerator"
+import { Route, Routes } from "react-router-dom"
+// import JokeGenerator from "components/JokeGenerator"
+// import CatFacts from "components/CatFacts"
 import GlobalStyles from "styles/GlobalStyles"
+import Weather from "pages/Weather"
+import WeatherHome from "pages/Weather/components/WeatherHome"
+import Weathers from "pages/Weather/components/Weathers"
 // import TodoList from "components/TodoList"
 // import Layout from "components/Layout"
 
@@ -18,7 +22,15 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <JokeGenerator />
+      <Weather>
+        <Routes>
+          <Route path="/" element={<WeatherHome />} />
+          <Route path="/weathers" element={<Weathers />} />
+          <Route path="*" element="Page is not found" />
+        </Routes>
+      </Weather>
+      {/* <CatFacts /> */}
+      {/* <JokeGenerator /> */}
       {/* <TodoList /> */}
       {/* <Layout>
         <Routes>
